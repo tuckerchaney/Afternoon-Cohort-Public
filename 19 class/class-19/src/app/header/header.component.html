@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<button (click)="toggleHeaderTitle()">Change</button>
+<p>{{ description }}</p>
+
+<input type="text" [(ngModel)]="inputText" placeholder="Type Something..." />
+<button (click)="toggleMessage()">submit</button>
+<p>this is what the user entered: {{ inputText }}</p>
+
+@if (showMessage) {
+<p>Hide</p>
+} @else { Show }
