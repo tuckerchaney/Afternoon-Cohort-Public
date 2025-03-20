@@ -1,0 +1,11 @@
+<h1>Question 3: Favorite Colors</h1>
+
+<ul>
+  @for (color of colors(); track $index) {
+  <li>{{ color.name }}</li>
+  }
+</ul>
+<input type="text" placeholder="Add a color" [(ngModel)]="colorInput" />
+<p>{{ color() }}</p>
+<button (click)="addColor()">Add</button>
+<button (click)="deleteColor()">Delete</button>

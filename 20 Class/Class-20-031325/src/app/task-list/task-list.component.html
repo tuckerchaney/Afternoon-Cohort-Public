@@ -1,0 +1,10 @@
+<h1>Question 2: Task List</h1>
+
+<ul>
+  @for (task of tasks(); track $index) {
+  <li>{{ task.name }}</li>
+  }
+</ul>
+<input type="text" placeholder="Add a task" [(ngModel)]="taskInput" />
+<p>{{ task() }}</p>
+<button (click)="addTask()">Add</button>
